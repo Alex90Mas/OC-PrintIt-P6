@@ -35,9 +35,9 @@ function modifierSlide() {
 }
 
 //écouter les clics sur les flèches
-let flecheGauche = document.querySelector(".arrow_left")
-flecheGauche.addEventListener("click", () => {
-	console.log("vous avez cliqué sur la flèche gauche")
+let arrowLeft = document.querySelector(".arrow_left")
+arrowLeft.addEventListener("click", () => {
+	console.log("you clicked on the left arrow")
 	i--
 	if (i<0){
 		i=slides.length-1
@@ -45,9 +45,9 @@ flecheGauche.addEventListener("click", () => {
 	modifierSlide()
 })
 
-let flecheDroite = document.querySelector(".arrow_right")
-flecheDroite.addEventListener("click", () => {
-	console.log("vous avez cliqué sur la flèche droite")
+let arrowRight = document.querySelector(".arrow_right")
+arrowRight.addEventListener("click", () => {
+	console.log("you cliked on the right arrow")
 	i++
 	if (i>=slides.length){
 		i=0
