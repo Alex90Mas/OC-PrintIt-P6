@@ -25,7 +25,7 @@ let dot = document.querySelectorAll(".dot")
 
 
 //fonction pour les changements images, texte et bullet points
-function modifierSlide() {
+function changeSlide() {
 	bannerImg.src = slides[i].image
 	tagLines.innerHTML = slides[i].tagLine
 
@@ -42,7 +42,7 @@ arrowLeft.addEventListener("click", () => {
 	if (i<0){
 		i=slides.length-1
 	}
-	modifierSlide()
+	changeSlide()
 })
 
 let arrowRight = document.querySelector(".arrow_right")
@@ -52,7 +52,7 @@ arrowRight.addEventListener("click", () => {
 	if (i>=slides.length){
 		i=0
 	}
-	modifierSlide()
+	changeSlide()
 })
 
 
